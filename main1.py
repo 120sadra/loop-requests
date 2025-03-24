@@ -4,10 +4,11 @@ import time
 headers = {
     "User-Agent" : "your user agent"
 }
+url = "your url"
 i = 1
 while True :
     try:
-        response =  requests.get("https://your url/" , headers=headers)
+        response =  requests.get(url , headers=headers)
         status = response.status_code
         print(status)
         if status == 200 :
